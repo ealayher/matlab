@@ -238,7 +238,7 @@ for i = 1:arraySize
             end % if storeImages
             
             img2Dim = size(img2);
-            if img1Dim == img2Dim
+            if img1Dim(1) == img2Dim(1) && img1Dim(2) == img2Dim(2)
                 skipImg = false;
             else % Images must have same dimensions
                 skipImg = true;
